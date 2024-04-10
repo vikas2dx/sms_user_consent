@@ -1,8 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="dev.pharsh.sms_user_consent">
-  <application
-    android:label="sms_user_consent">
+  <application>
  
          <receiver
              android:name=".SmsUserConsentPlugin"
