@@ -1,3 +1,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="dev.pharsh.sms_user_consent">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="dev.pharsh.sms_user_consent">
+  <application
+    android:label="sms_user_consent">
+ 
+         <receiver
+             android:name=".SmsUserConsentPlugin"
+             android:enabled="true"
+             android:exported="true"
+             tools:ignore="Instantiatable">
+            
+        </receiver>
+        
+    </application>
 </manifest>
