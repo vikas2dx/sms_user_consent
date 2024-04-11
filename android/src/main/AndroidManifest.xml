@@ -2,14 +2,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="dev.pharsh.sms_user_consent">
   <application>
- 
-         <receiver
-             android:name=".SmsUserConsentPlugin"
-             android:enabled="true"
-             android:exported="true"
-             tools:ignore="Instantiatable">
-            
-        </receiver>
-        
-    </application>
+
+      <receiver
+          android:name=".SmsUserConsentPlugin"
+          android:exported="true"
+          android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+          <intent-filter>
+              <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+          </intent-filter>
+      </receiver>
+
+
+  </application>
 </manifest>
